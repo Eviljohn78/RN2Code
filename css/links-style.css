@@ -38,6 +38,10 @@ nav {
   bottom: 20px;  
 }
 
+ul {
+  list-style-type: none;
+}
+
 nav li {
   background-color: #00afff;
   padding: 10px;
@@ -79,11 +83,28 @@ h3 {
   font-size: 120%;
 }
 
-.recent-updates {
+.coding-websites {
   width: 500px;
   text-align: center;
   margin: auto;
+}
 
+.coding-books {
+  width: 500px;
+  text-align: center;
+  margin: auto;
+}
+
+a.links:link {
+  color: black;
+}
+
+a.links:visited {
+  color: black;
+}
+
+a.links:hover {
+  color: #fc03f7;
 }
 
 img {
@@ -96,7 +117,8 @@ hr {
 }
 
 footer {
-  position: absolute;
+  position: fixed;
+  bottom: 0px;
   display: flex;
   justify-content: center;
   align-items: center;

@@ -4,6 +4,7 @@
 }
 
 body {
+  position: relative;
   background-image: linear-gradient(to right, #00afff, white, #00afff);
   font-size: medium;
   line-height: 130%;
@@ -12,6 +13,7 @@ body {
 
 #main-header {
   position: relative;
+  top: 0px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -46,15 +48,9 @@ nav li {
   border-radius: 20px;
 }
 
-h2 {
+h2, h3 {
   color: #00AFFF;
   padding: 20px;
-}
-
-h3 {
-  color: #00AFFF;
-  padding: 20px;
-  padding-bottom: 0px;
 }
 
 a:link {
@@ -79,11 +75,26 @@ h3 {
   font-size: 120%;
 }
 
-.recent-updates {
+.aboutMe {
   width: 500px;
   text-align: center;
   margin: auto;
+}
 
+.aboutMe ul {
+  list-style-type: none;
+}
+
+.aboutMe a:link {
+  color: #00afff;
+}
+
+.aboutMe a:visited {
+  color: #00afff;
+}
+
+.aboutMe a:hover {
+  color:#fc03f7;
 }
 
 img {
@@ -96,7 +107,8 @@ hr {
 }
 
 footer {
-  position: absolute;
+  position: fixed;
+  bottom: 0px;
   display: flex;
   justify-content: center;
   align-items: center;

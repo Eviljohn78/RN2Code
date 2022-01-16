@@ -4,6 +4,7 @@
 }
 
 body {
+  position: relative;
   background-image: linear-gradient(to right, #00afff, white, #00afff);
   font-size: medium;
   line-height: 130%;
@@ -12,6 +13,7 @@ body {
 
 #main-header {
   position: relative;
+  top: 0px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -46,15 +48,10 @@ nav li {
   border-radius: 20px;
 }
 
-h2 {
+h2, h3 {
   color: #00AFFF;
   padding: 20px;
-}
-
-h3 {
-  color: #00AFFF;
-  padding: 20px;
-  padding-bottom: 0px;
+  text-align: center;
 }
 
 a:link {
@@ -68,7 +65,20 @@ a:hover {
   color: #fc03f7;
 }
 
+a.links:link {
+  background-color:#fc03f7;
+  border: thin solid black;
+  padding: 5px;
+  color: black;
+}
 
+a.links:visited {
+  color: black;
+}
+
+a.links:hover {
+  color: white;
+}
 
 h2 {
   font-size: 150%;
@@ -79,11 +89,58 @@ h3 {
   font-size: 120%;
 }
 
-.recent-updates {
+.contact-form {
   width: 500px;
-  text-align: center;
+  padding: 20px;
+  padding-left: 10px;
   margin: auto;
+  border: medium solid #436778;
+}
 
+fieldset legend {
+  text-align: center;
+  font-size: 120%;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 5px;
+  margin: 5px 0px;
+}
+input[type=email] {
+  width: 100%;
+  padding: 5px;
+  margin: 5px 0px;
+}
+
+textarea {
+  width: 100%;
+  padding: 5px;
+  margin: 5px 0px;
+}
+
+button {
+  background-color:#fc03f7;
+  font-size: 120%;
+  border: thin solid black;
+  padding: 5px;
+  color: black;
+}
+
+.aboutMe ul {
+  list-style-type: none;
+}
+
+.aboutMe a:link {
+  color: #00afff;
+}
+
+.aboutMe a:visited {
+  color: #00afff;
+}
+
+.aboutMe a:hover {
+  color:#fc03f7;
 }
 
 img {
@@ -96,7 +153,8 @@ hr {
 }
 
 footer {
-  position: absolute;
+  position: fixed;
+  bottom: 0px;
   display: flex;
   justify-content: center;
   align-items: center;
