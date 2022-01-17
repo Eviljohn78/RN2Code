@@ -66,10 +66,10 @@ a:hover {
 }
 
 a.links:link {
-  background-color:#fc03f7;
+  background-color: #00afff;
   border: thin solid black;
   padding: 5px;
-  color: black;
+  color: white;
 }
 
 a.links:visited {
@@ -120,11 +120,11 @@ textarea {
 }
 
 button {
-  background-color:#fc03f7;
+  background-color: #00afff;
   font-size: 120%;
   border: thin solid black;
   padding: 5px;
-  color: black;
+  color: white;
 }
 
 .aboutMe ul {
