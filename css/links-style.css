@@ -63,6 +63,7 @@ h3 {
 
 a:link {
   color: white;
+  text-decoration: none;
 }
 a:visited {
   color: white;
@@ -97,6 +98,7 @@ h3 {
 
 a.links:link {
   color: black;
+  text-decoration: none;
 }
 
 a.links:visited {

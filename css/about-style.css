@@ -55,6 +55,7 @@ h2, h3 {
 
 a:link {
   color: white;
+  text-decoration: none;
 }
 a:visited {
   color: white;
@@ -104,6 +105,10 @@ img {
 
 hr {
   border: thin solid #fc03f7;
+}
+
+.my-links {
+  line-height: 300%;
 }
 
 footer {
