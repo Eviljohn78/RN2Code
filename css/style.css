@@ -134,6 +134,6 @@ p {
 
 @media (max-width: 800px) {
   header, footer {
-    width: 100%;
+    width: 100vw;
   }
 }
