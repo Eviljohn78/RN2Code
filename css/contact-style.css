@@ -22,7 +22,6 @@ header {
   justify-content: center;
   align-items: center;
   background-color: #000033;
-  height: 150px;
   border-top: medium solid #fc03f7;
   border-bottom: medium solid #fc03f7;
 }
@@ -32,6 +31,7 @@ h1 {
   color: white;
   font-size: 250%;
   padding: 20px;
+  margin: 20px;
   width: 300px;
   text-align: center;
   border: medium solid #fc03f7;
@@ -40,7 +40,7 @@ h1 {
 
 nav ul {
   display: flex;
-  margin-top: 20px;
+  margin-bottom: 20px;
   gap: 50px;
   list-style-type: none;
 }
@@ -121,9 +121,12 @@ footer {
   align-items: center;
   background-color: #000033;
   color: white;
-  height: 150px;
   border-top: medium solid #fc03f7;
   border-bottom: medium solid #fc03f7;
+}
+
+#copyright {
+  margin: 20px;
 }
 
 @media (max-width: 800px) {
