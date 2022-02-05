@@ -22,8 +22,8 @@ header {
   justify-content: center;
   align-items: center;
   background-color: #000033;
-  border-top: medium solid #fc03f7;
-  border-bottom: medium solid #fc03f7;
+  border-top: thin solid #fc03f7;
+  border-bottom: thin solid #fc03f7;
 }
 
 h1 {
@@ -33,7 +33,7 @@ h1 {
   padding: 20px;
   width: 300px;
   text-align: center;
-  border: medium solid #fc03f7;
+  border: thin solid #fc03f7;
   border-radius: 30px;
   margin: 20px;
 }
@@ -54,7 +54,7 @@ a:visited {
 }
 
 a:hover {
-  color: #fc03f7;             
+  color: #fc03f7;   
 }
 
 h2 {
@@ -100,7 +100,7 @@ img {
 }
 
 hr {
-  border: thin solid #fc03f7;
+  border-top: thin solid #fc03f7;
   width: 500px;
 }
 
@@ -123,8 +123,8 @@ footer {
   align-items: center;
   background-color: #000033;
   color: white;
-  border-top: medium solid #fc03f7;
-  border-bottom: medium solid #fc03f7;
+  border-top: thin solid #fc03f7;
+  border-bottom: thin solid #fc03f7;
 }
 
 p {

@@ -22,8 +22,8 @@ header {
   justify-content: center;
   align-items: center;
   background-color: #000033;
-  border-top: medium solid #fc03f7;
-  border-bottom: medium solid #fc03f7;
+  border-top: thin solid #fc03f7;
+  border-bottom: thin solid #fc03f7;
 }
 
 h1 {
@@ -34,7 +34,7 @@ h1 {
   margin: 20px;
   width: 300px;
   text-align: center;
-  border: medium solid #fc03f7;
+  border: thin solid #fc03f7;
   border-radius: 30px;
 }
 
@@ -121,8 +121,8 @@ footer {
   align-items: center;
   background-color: #000033;
   color: white;
-  border-top: medium solid #fc03f7;
-  border-bottom: medium solid #fc03f7;
+  border-top: thin solid #fc03f7;
+  border-bottom: thin solid #fc03f7;
 }
 
 #copyright {
