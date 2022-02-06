@@ -8,12 +8,12 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100vh;
-  width: 100vw;
-  background-image: linear-gradient(to right, #00afff, white 33% 66%, #00afff 100%);
+  background-image: linear-gradient(to right, #00afff, white 33% 66%, #00afff);
   font-size: medium;
   line-height: 130%;
   font-family:Verdana, Tahoma, sans-serif;
+  height: 100vh;
+  width: 100vw;
 }
 
 header {
@@ -59,34 +59,27 @@ a:hover {
 
 h2 {
   font-size: 150%;
-  color: #00AFFF;
-  padding: 20px;
 }
 
-h3 {
-  color: #00AFFF;
+.grid-container {
+  display: grid;
+  grid-template-columns: 400px;
+  gap: 20px;
   padding: 20px;
-  font-size: 120%;
+  justify-content: center;
 }
 
-.flex-container {
-  display: flex;
-  justify-content: space-around;
-  align-items: stretch;
+.grid-item {
+  border: thin solid #000033;
+  border-radius: 20px;
+  padding: 20px;
 }
 
 .about-me {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  width: 500px;
-  
-}
-
-hr {
-  border-top: thin solid #fc03f7;
-  width: 250px;
+  align-items: center;  
 }
 
 p {
@@ -99,13 +92,11 @@ p {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  width: 250px;
 }
 
 .my-links a:link {
   color: black;
   padding-top: 20px;
-  padding-bottom: 20px;
 }
 
 .my-links a:visited {
@@ -126,11 +117,12 @@ footer {
   border-bottom: thin solid #fc03f7;
 }
 
-@media (max-width: 800px) {
-  .flex-container {
-    flex-direction: column;
+@media (min-width: 800px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: minmax(400px, 40%) minmax(400px, 20%);
+    gap: 20px;
     justify-content: center;
-    align-items: center;
-
+    align-items: start;
   }
 }
