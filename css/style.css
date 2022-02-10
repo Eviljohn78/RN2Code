@@ -76,10 +76,7 @@ a:hover {
   border: medium solid #000033;
   border-radius: 20px;
   box-shadow: 10px 10px 10px 5px;
-}
-
-p {
-  text-align: justify;
+  text-align: center;
 }
 
 .inline-images {
