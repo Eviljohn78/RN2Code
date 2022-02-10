@@ -8,9 +8,9 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-image: linear-gradient(to right, #00afff, white 33% 66%, #00afff);
+  background-image: linear-gradient(to right, #00afff 0%, white, #00afff 33%, white, #00afff 66%, white, #00afff 100%);
   font-size: medium;
-  line-height: 130%;
+  line-height: 160%;
   font-family:Verdana, Tahoma, sans-serif;
   height: 100vh;
   width: 100vw;
@@ -21,27 +21,23 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 20px;
+  width: 100vw;
   background-color: #000033;
-  border-top: thin solid #fc03f7;
-  border-bottom: thin solid #fc03f7;
+  border-top: medium solid white;
+  border-bottom: medium solid white;
+  padding: 20px;
+  margin-bottom: 20px;
 }
 
 h1 {
-  background-color: #00afff;
   color: white;
-  font-size: 250%;
-  padding: 20px;
-  width: 300px;
   text-align: center;
-  border: thin solid #fc03f7;
-  border-radius: 30px;
-  margin: 20px;
 }
 
 nav ul {
   display: flex;
-  margin-bottom: 20px;
-  gap: 50px;
+  gap: 20px;
   list-style-type: none;
 }
 
@@ -57,11 +53,6 @@ a:hover {
   color: #fc03f7;   
 }
 
-h2 {
-  font-size: 150%;
-  padding: 20px;
-}
-
 .main-title {
   display: flex;
   justify-content: center;
@@ -70,14 +61,9 @@ h2 {
 
 .recent-updates {
   display: grid;
-  grid-template-columns: 400px;
+  grid-template-columns: 1fr;
   gap: 20px;
-  justify-content: center;
-  padding: 0px 20px 20px 20px;
-}
-
-h3 {
-  font-size: 120%;
+  padding: 20px;
 }
 
 .update {
@@ -85,13 +71,14 @@ h3 {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  gap: 20px;
   padding: 20px;
-  border: thin solid #000033;
+  border: medium solid #000033;
   border-radius: 20px;
+  box-shadow: 10px 10px 10px 5px;
 }
 
 p {
-  padding: 20px;
   text-align: justify;
 }
 
@@ -103,13 +90,13 @@ p {
 }
 
 img {
-  border: thin solid black;
+  border: thin solid #000033;
   border-radius: 20px;
 }
 
 a.links:link {
   color: black;
-  padding: 10px;
+  text-align: center;
 }
 
 a.links:visited {
@@ -124,38 +111,44 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   background-color: #000033;
   color: white;
-  border-top: thin solid #fc03f7;
-  border-bottom: thin solid #fc03f7;
+  padding: 20px;
+  border-top: medium solid white;
+  border-bottom: medium solid white;
+  font-size: 80%;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 768px) {
+
+  body {
+    font-size: 120%;
+  }
+
+}
+
+@media (min-width: 992px) {
+
   .recent-updates {
-  display: grid;
-  gap: 20px;
-  padding: 0 20px 20px 20px;
-  justify-content: center;
-  grid-template-columns: repeat(3, minmax(400px, 1fr));
-  grid-template-areas:
-    ". update-4 ."
-    "update-3 update-2 update-1";
-  }
-
-  .jan-27-update {
-    grid-area: update-4;
-  }
-  
-  .jan-17-update {
-    grid-area: update-3;
-  }
-  
-  .dec-27-update {
-    grid-area: update-2;
-  }
-  
-  .dec-15-update {
-    grid-area: update-1;
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
   }
 
 }
+
+@media (min-width: 1200px) {
+
+  .recent-updates {
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+}
+
