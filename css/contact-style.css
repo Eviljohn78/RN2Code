@@ -53,16 +53,16 @@ a:hover {
   color: #fc03f7;             
 }
 
-h2 {
+h3 {
   color: black;
-  padding-top: 20px;
   text-align: center;
+  line-height: 240%;
 }
 
 a.links:link {
-  background-color: #00afff;
-  border: thin solid black;
-  padding: 5px;
+  background-color: #000033;
+  border: medium solid white;
+  padding: 10px;
   color: white;
   text-decoration: none;
 }
@@ -71,11 +71,8 @@ a.links:link {
   padding: 20px;
   margin: 20px;
   border: medium solid #000033;
-}
-
-fieldset legend {
-  text-align: center;
-  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 10px 10px 10px 5px;
 }
 
 input[type=text] {
@@ -96,10 +93,12 @@ textarea {
 }
 
 button {
-  background-color: #00afff;
-  border: thin solid black;
-  padding: 5px;
+  background-color: #000033;
+  border: medium solid white;
+  font-size: 100%;
+  padding: 10px;
   color: white;
+  cursor: pointer;
 }
 
 footer {
@@ -120,6 +119,31 @@ footer {
 
   body {
     font-size: 120%;
+  }
+
+  header {
+    gap: 40px;
+    padding: 40px;
+    margin-bottom: 40px;
+  }
+
+  nav ul {
+    gap: 40px;
+  }
+
+  h3 {
+    line-height: 100%;
+  }
+
+  .contact-form {
+    gap: 40px;
+    padding: 40px;
+    margin: 40px;
+    box-shadow: 20px 20px 20px 10px;
+  }
+
+  footer {
+    padding: 40px;
   }
 
 }

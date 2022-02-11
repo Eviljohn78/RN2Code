@@ -53,15 +53,7 @@ a:hover {
   color: #fc03f7;             
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 20px;
-  padding: 20px;
-  justify-content: center;
-}
-
-.grid-item {
+.projects {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -74,16 +66,16 @@ a:hover {
   box-shadow: 10px 10px 10px 5px;
 }
 
-a.links:link {
+a.project-links:link {
   color: black;
   text-decoration: none;
 }
 
-a.links:visited {
+a.project-links:visited {
   color: black;
 }
 
-a.links:hover {
+a.project-links:hover {
   color: #fc03f7;
 }
 
@@ -108,25 +100,26 @@ footer {
     font-size: 120%;
   }
 
-}
-
-@media (min-width: 992px) {
-
-  .grid-container {
-    display: grid;
-    gap: 20px;
-    padding: 20px;
-    justify-content: center;
-    grid-template-columns: 1fr 1fr;
-    margin-left: 10%;
-    margin-right: 10%;
+  header {
+    gap: 40px;
+    padding: 40px;
   }
 
-  .grid-item {
-    justify-content: flex-start;
+  nav ul {
+    gap: 40px;
+  }
 
+  .projects {
+    gap: 40px;
+    padding: 40px;
+    box-shadow: 20px 20px 20px 10px;
+  }
+
+  footer {
+    padding: 40px;
   }
 
 }
+
 
 

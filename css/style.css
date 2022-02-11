@@ -123,14 +123,37 @@ footer {
     font-size: 120%;
   }
 
+  header {
+    gap: 40px;
+    padding: 40px;
+    margin-bottom: 40px;
+  }
+
+  nav ul {
+    gap: 40px;
+  }
+
+  .recent-updates {
+    gap: 40px;
+    padding: 40px;
+  }
+
+  .update {
+    gap: 40px;
+    padding: 40px;
+    box-shadow: 20px 20px 20px 10px;
+  }
+
+  footer {
+    padding: 40px;
+  }
+
 }
 
 @media (min-width: 992px) {
 
   .recent-updates {
     display: grid;
-    gap: 20px;
-    padding: 20px;
     justify-content: center;
     grid-template-columns: repeat(2, 1fr);
   }
@@ -141,8 +164,6 @@ footer {
 
   .recent-updates {
     display: grid;
-    gap: 20px;
-    padding: 20px;
     justify-content: center;
     grid-template-columns: repeat(3, 1fr);
   }
