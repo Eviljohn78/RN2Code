@@ -8,10 +8,11 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-image: linear-gradient(to right, #00afff 0%, white, #00afff 33%, white, #00afff 66%, white, #00afff 100%);
+  background-color:rgb(100, 100, 100);
   font-size: medium;
   line-height: 160%;
   font-family:Verdana, Tahoma, sans-serif;
+  color: white;
   height: 100vh;
   width: 100vw;
 }
@@ -31,7 +32,6 @@ header {
 }
 
 h1 {
-  color: white;
   text-align: center;
   font-family: "Press Start 2P", Georgia, serif;
   font-size: 175%;
@@ -72,6 +72,10 @@ a:hover {
   padding: 20px;
 }
 
+h2 {
+  text-shadow: 4px 4px 2px black;
+}
+
 .update {
   display: flex;
   flex-direction: column;
@@ -79,9 +83,10 @@ a:hover {
   align-items: center;
   gap: 20px;
   padding: 20px;
-  border: medium solid #000033;
+  background-color: #000033;
+  border: medium solid white;
   border-radius: 20px;
-  box-shadow: 10px 10px 10px 5px;
+  box-shadow: 10px 10px 10px 5px black;
 }
 
 .inline-images {
@@ -92,21 +97,8 @@ a:hover {
 }
 
 img {
-  border: thin solid #000033;
+  border: thin solid white;
   border-radius: 20px;
-}
-
-a.links:link {
-  color: black;
-  text-align: center;
-}
-
-a.links:visited {
-  color: black;
-}
-
-a.links:hover {
-  color: #fc03f7;
 }
 
 footer {
@@ -146,7 +138,7 @@ footer {
   .update {
     gap: 40px;
     padding: 40px;
-    box-shadow: 20px 20px 20px 10px;
+    box-shadow: 20px 20px 20px 10px black;
   }
 
   footer {
@@ -161,16 +153,6 @@ footer {
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(2, 1fr);
-  }
-
-}
-
-@media (min-width: 1200px) {
-
-  .recent-updates {
-    display: grid;
-    justify-content: center;
-    grid-template-columns: repeat(3, 1fr);
   }
 
 }

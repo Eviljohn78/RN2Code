@@ -11,10 +11,11 @@ body {
   align-items: center;
   height: 100vh;
   width: 100vw;
-  background-image: linear-gradient(to right, #00afff 0%, white, #00afff 33%, white, #00afff 66%, white, #00afff 100%);
+  background-color: rgb(100, 100, 100);
   font-size: medium;
   line-height: 160%;
   font-family:Verdana, Tahoma, sans-serif;
+  color: white;
 }
 
 header {
@@ -31,10 +32,13 @@ header {
 }
 
 h1 {
-  color: white;
   text-align: center;
   font-family: "Press Start 2P", Georgia, serif;
   font-size: 175%;
+}
+
+header, h3, footer {
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 nav ul {
@@ -56,13 +60,12 @@ a:hover {
 }
 
 h3 {
-  color: black;
   text-align: center;
   line-height: 240%;
 }
 
 a.links:link {
-  background-color: #000033;
+  background-color: #4545ff;
   border: medium solid white;
   padding: 10px;
   color: white;
@@ -72,9 +75,10 @@ a.links:link {
 .contact-form {
   padding: 20px;
   margin: 20px;
-  border: medium solid #000033;
+  background-color: #000033;
+  border: medium solid white;
   border-radius: 20px;
-  box-shadow: 10px 10px 10px 5px;
+  box-shadow: 10px 10px 10px 5px black;
 }
 
 input[type=text] {
@@ -95,7 +99,7 @@ textarea {
 }
 
 button {
-  background-color: #000033;
+  background-color: #4545ff;
   border: medium solid white;
   font-size: 100%;
   padding: 10px;
@@ -137,15 +141,11 @@ footer {
     line-height: 100%;
   }
 
-  header, h3, footer {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-  }
-
   .contact-form {
     gap: 40px;
     padding: 40px;
     margin: 40px;
-    box-shadow: 20px 20px 20px 10px;
+    box-shadow: 20px 20px 20px 10px black;
   }
 
   footer {
