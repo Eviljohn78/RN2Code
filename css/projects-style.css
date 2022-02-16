@@ -33,6 +33,12 @@ header {
 h1 {
   color: white;
   text-align: center;
+  font-family: "Press Start 2P", Georgia, serif;
+  font-size: 175%;
+}
+
+header, h3, footer {
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 nav ul {

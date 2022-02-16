@@ -33,6 +33,12 @@ header {
 h1 {
   color: white;
   text-align: center;
+  font-family: "Press Start 2P", Georgia, serif;
+  font-size: 175%;
+}
+
+header, h2, h3, footer {
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 nav ul {
@@ -76,7 +82,6 @@ a:hover {
   border: medium solid #000033;
   border-radius: 20px;
   box-shadow: 10px 10px 10px 5px;
-  text-align: center;
 }
 
 .inline-images {
