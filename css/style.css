@@ -79,6 +79,7 @@ h2 {
   border: medium solid white;
   border-radius: 10px;
   padding: 20px;
+  box-shadow: 10px 10px 10px 5px black;
 }
 
 .update {
@@ -137,6 +138,7 @@ footer {
 
   h2 {
     padding: 20px;
+    box-shadow: 20px 20px 20px 10px black;
   }
 
   .recent-updates {
