@@ -68,6 +68,10 @@ a:hover {
   justify-content: center;
 }
 
+h2 {
+  text-align: center;
+}
+
 .grid-item {
   display: flex;
   flex-direction: column;
