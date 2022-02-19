@@ -82,7 +82,7 @@ h2 {
   border: medium solid white;
   border-radius: 10px;
   padding: 20px;
-  box-shadow: 10px 10px 10px 5px black;
+  box-shadow: 10px 10px 10px black;
 }
 
 footer {
@@ -105,9 +105,33 @@ footer {
     font-size: 120%;
   }
 
+  header {
+    gap: 40px;
+    padding: 40px;
+  }
+
+  nav > ul {
+    gap: 40px;
+  }
+
+  .grid-container {
+    gap: 40px;
+    padding: 40px;
+  }
+
+  .grid-item {
+    gap: 40px;
+    padding: 40px;
+    box-shadow: 20px 20px 20px black;
+  }
+  
+  footer {
+    padding: 40px;
+  }
+
 }
   
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
 
   .grid-container {
     display: grid;

@@ -68,7 +68,7 @@ h2 {
   background-color: #000033;
   border: medium solid white;
   border-radius: 10px;
-  box-shadow: 10px 10px 10px 5px black;
+  box-shadow: 10px 10px 10px black;
 }
 
 a.links:link {
@@ -85,7 +85,7 @@ a.links:link {
   background-color: #000033;
   border: medium solid white;
   border-radius: 10px;
-  box-shadow: 10px 10px 10px 5px black;
+  box-shadow: 10px 10px 10px black;
 }
 
 input[type=text] {
@@ -134,8 +134,29 @@ footer {
     font-size: 120%;
   }
 
+  header {
+    gap: 40px;
+    padding: 40px;
+  }
+
+  nav > ul {
+    gap: 40px;
+  }
+
   h2 {
     line-height: 100%;
-  }  
+    margin: 40px 40px 0px 40px;
+    box-shadow: 20px 20px 20px black;
+  } 
+  
+  .contact-form {
+    padding: 40px;
+    margin: 40px;
+    box-shadow: 20px 20px 20px black;
+  }
+
+  footer {
+    padding: 40px;
+  }
 
 }
