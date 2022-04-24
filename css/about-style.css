@@ -9,7 +9,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  background-color: rgb(100, 100, 100);
+  background-color: rgb(225, 225, 225);
   font-size: medium;
   line-height: 160%;
   font-family: Verdana, Tahoma, sans-serif;
@@ -25,9 +25,9 @@ header {
   align-items: center;
   gap: 20px;
   width: 100vw;
-  background-color: #000033;
-  border-top: medium solid white;
-  border-bottom: medium solid white;
+  background-color: #000069;
+  border-top: medium solid #696900;
+  border-bottom: medium solid #696900;
   padding: 20px;
 }
 
@@ -50,14 +50,14 @@ nav ul {
 
 a:link {
   color: white;
-  text-decoration: none;
+  text-decoration: underline solid 2px;
 }
 a:visited {
   color: white;
 }
 
 a:hover {
-  color: #fc03f7;             
+  color: rgb(255, 100, 255);             
 }
 
 .grid-container {
@@ -78,8 +78,8 @@ h2 {
   justify-content: center;
   align-items: center;
   gap: 20px;
-  background-color: #000033;
-  border: medium solid white;
+  background-color: #000069;
+  border: medium solid #696900;
   border-radius: 10px;
   padding: 20px;
   box-shadow: 10px 10px 10px black;
@@ -90,10 +90,10 @@ footer {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: #000033;
+  background-color: #000069;
   color: white;
-  border-top: medium solid white;
-  border-bottom: medium solid white;
+  border-top: medium solid #696900;
+  border-bottom: medium solid #696900;
   width: 100vw;
   font-size: 80%;
   padding: 20px;
