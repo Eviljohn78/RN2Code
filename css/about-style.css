@@ -26,8 +26,8 @@ header {
   gap: 20px;
   width: 100vw;
   background-color: #000069;
-  border-top: medium solid #696900;
-  border-bottom: medium solid #696900;
+  border-top: medium solid #6969ff;
+  border-bottom: medium solid #6969ff;
   padding: 20px;
 }
 
@@ -35,7 +35,7 @@ h1 {
   text-align: center;
   font-family: "Press Start 2P", Georgia, serif;
   font-size: 175%;
-  text-shadow: 5px 5px 2.5px rgb(50, 100, 125);
+  text-shadow: 5px 5px 2.5px #6969ff;
 }
 
 header, h2, footer {
@@ -51,6 +51,7 @@ nav ul {
 a:link {
   color: white;
   text-decoration: underline solid 2px;
+  text-underline-offset: 2px;
 }
 a:visited {
   color: white;
@@ -79,7 +80,7 @@ h2 {
   align-items: center;
   gap: 20px;
   background-color: #000069;
-  border: medium solid #696900;
+  border: medium solid #6969ff;
   border-radius: 10px;
   padding: 20px;
   box-shadow: 10px 10px 10px black;
@@ -92,8 +93,8 @@ footer {
   text-align: center;
   background-color: #000069;
   color: white;
-  border-top: medium solid #696900;
-  border-bottom: medium solid #696900;
+  border-top: medium solid #6969ff;
+  border-bottom: medium solid #6969ff;
   width: 100vw;
   font-size: 80%;
   padding: 20px;
