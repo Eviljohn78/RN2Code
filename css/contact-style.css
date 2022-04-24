@@ -11,7 +11,7 @@ body {
   align-items: center;
   height: 100vh;
   width: 100vw;
-  background-color: rgb(225, 225, 225);
+  background-color: rgb(175, 175, 175);
   font-size: medium;
   line-height: 160%;
   font-family:Verdana, Tahoma, sans-serif;
@@ -26,7 +26,7 @@ header {
   gap: 20px;
   padding: 20px;
   width: 100vw;
-  background-color: #000069;
+  background-color: #000033;
   border-top: medium solid #6969ff;
   border-bottom: medium solid #6969ff;
 }
@@ -66,7 +66,7 @@ h2 {
   line-height: 150%;
   margin: 20px 20px 0px 20px;
   padding: 20px;
-  background-color: #000069;
+  background-color: #000033;
   border: medium solid #6969ff;
   border-radius: 10px;
   box-shadow: 10px 10px 10px black;
@@ -75,7 +75,7 @@ h2 {
 .contact-form {
   padding: 20px;
   margin: 20px;
-  background-color: #000069;
+  background-color: #000033;
   border: medium solid #6969ff;
   border-radius: 10px;
   box-shadow: 10px 10px 10px black;
@@ -116,7 +116,7 @@ footer {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: #000069;
+  background-color: #000033;
   color: white;
   border-top: medium solid #6969ff;
   border-bottom: medium solid #6969ff;
