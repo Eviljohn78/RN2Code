@@ -25,7 +25,8 @@ header {
   gap: 1rem;
   background-color:#000033;
   padding: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 2rem; 
+  height: 100%;
   width: 100%;
   position: relative;
   z-index: 1;
@@ -41,6 +42,14 @@ header::after {
   transform-origin: right bottom;
   transform: skewY(-2deg);
   background-color: #000033;
+}
+
+#title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
 
 h1 {
@@ -96,10 +105,12 @@ h2 {
   border-radius: 10px;
   padding: 1rem;
   box-shadow: 10px 10px 10px black;
+  max-width: 768px;
 }
 
 footer {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -107,7 +118,8 @@ footer {
   color: white;
   padding: 2rem;
   margin-top: 2rem;
-  font-size: 80%;
+  font-size: 100%;
+  height: 100%;
   width: 100%;
   position: relative;
   z-index: 1;
@@ -125,15 +137,25 @@ footer::before {
   background-color: #000033;
 }
 
+#copyright {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 @media (min-width: 768px) {
 
   body {
-    font-size: 120%;
+    font-size: 1.2rem;
   }
 
   header {
-    gap: 2rem;
     margin-bottom: 3rem;
+  }
+
+  #title {
+    align-self: flex-start;
   }
 
   nav > ul {
@@ -152,7 +174,11 @@ footer::before {
   }
   
   footer {
-    margin-top: 2.5rem;
+    margin-top: 3rem;
+  }
+
+  #copyright {
+    align-self: flex-end;
   }
 
 }
@@ -163,32 +189,23 @@ footer::before {
     margin-bottom: 4rem;
   }
 
-  .grid-container {
-    display: grid;
-    justify-items: stretch;
-    align-items: flex-start;
-    grid-template-columns: 5fr 2fr;
-    margin-left: 10%;
-    margin-right: 10%;
-  }
-
   .my-links {
     justify-content: flex-start;
   }
 
   footer {
-    margin-top: 3.5rem;
+    margin-top: 4rem;
   }
 
 }
 
 @media (min-width: 1920px) {
   header {
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
   }
 
   footer {
-    margin-top: 2.5rem;
+    margin-top: 5rem;
   }
 
 }
