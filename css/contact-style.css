@@ -10,7 +10,8 @@ body {
   justify-content: space-between;
   align-items: center;
   height: 100vh;
-  background-color: #33a3ff;
+  background: linear-gradient(rgba(51, 163, 255, 0.75), rgba(51, 163, 255, 0.75)), url("../images/html-background.png");
+  background-size: cover;
   font-size: medium;
   line-height: 1.5rem;
   font-family:Verdana, Tahoma, sans-serif;

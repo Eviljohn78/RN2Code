@@ -9,7 +9,8 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  background-color: #33a3ff;
+  background: linear-gradient(rgba(51, 163, 255, 0.75), rgba(51, 163, 255, 0.75)), url("../images/html-background.png");
+  background-size: cover;
   font-size: medium;
   line-height: 1.5rem;
   font-family:Verdana, Tahoma, sans-serif;
@@ -83,51 +84,34 @@ a:hover {
   color: rgb(255, 100, 255); 
 }
 
-.main-title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.recent-updates {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
-  padding: 1rem;
-}
-
-h2 {
-  background-color: #000033;
-  border: medium solid #33a3ff;
-  border-radius: 10px;
-  padding: 1rem;
-  box-shadow: 10px 10px 10px black;
-}
-
-.update {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 1rem;
-  padding: 1rem;
-  background-color: #000033;
-  border: medium solid #33a3ff;
-  border-radius: 10px;
-  box-shadow: 10px 10px 10px black;
-}
-
-.inline-images {
+#hero {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 1rem;
+  padding: 1rem;
 }
 
 img {
+  max-width: 100%;
+  height: auto;
   border: medium solid #33a3ff;
   border-radius: 10px;
+  box-shadow: 10px 10px 10px black;
+}
+
+#intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: #000033;
+  border: medium solid #33a3ff;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px black;
 }
 
 footer {
@@ -184,27 +168,19 @@ footer::before {
     gap: 2rem;
   }
 
-  h2 {
-    box-shadow: 20px 20px 20px black;
-  }
- 
-  .recent-updates {
+  #hero {
     gap: 2rem;
     padding: 2rem;
   }
 
-  .update {
+  img {
+    box-shadow: 20px 20px 20px black;;
+  }
+
+  #intro {
     gap: 2rem;
     padding: 2rem;
     box-shadow: 20px 20px 20px black;
-  }
-
-  .inline-images {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
   }
 
   footer {
@@ -219,12 +195,6 @@ footer::before {
 
 @media (min-width: 1200px) {
 
-  .recent-updates {
-    display: grid;
-    justify-items: center;
-    grid-template-columns: repeat(2, 1fr);
-  }
-
   header {
     margin-bottom: 4rem;
   }
@@ -236,9 +206,6 @@ footer::before {
 }
 
 @media (min-width: 1920px) {
-  .recent-updates {
-    grid-template-columns: repeat(3, 1fr);
-  }
 
   header {
     margin-bottom: 5rem;
