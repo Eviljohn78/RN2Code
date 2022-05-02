@@ -5,17 +5,15 @@
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100vh;
   background: linear-gradient(rgba(51, 163, 255, 0.75), rgba(51, 163, 255, 0.75)), url("../images/html-background.png");
   background-size: cover;
   font-size: medium;
   line-height: 1.5rem;
-  font-family: Verdana, Tahoma, sans-serif;
+  font-family:Verdana, Tahoma, sans-serif;
   color: white;
-  height: 100vh;
 }
 
 header {
@@ -24,33 +22,12 @@ header {
   justify-content: center;
   align-items: center;
   gap: 1rem;
+  padding: 1rem;
   background-color:#000033;
-  padding: 2rem;
-  margin-bottom: 2rem; 
-  height: 100%;
   width: 100%;
-  position: relative;
-  z-index: 1;
-}
-
-header::after {
-  position: absolute;
-  content: "";
-  z-index: -1;
-  height: 100%;
-  width: 100%;
-  bottom: 0;
-  transform-origin: right bottom;
-  transform: skewY(-2deg);
-  background-color: #000033;
-}
-
-#title {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
+  border-top: medium solid #33a3ff;
+  border-bottom: medium solid #33a3ff;
+  box-shadow: 0px 10px 10px black;
 }
 
 h1 {
@@ -60,7 +37,7 @@ h1 {
   text-shadow: 5px 5px 5px #33a3ff;
 }
 
-header, h2, footer {
+header, h2, h3, footer {
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
@@ -75,19 +52,24 @@ a:link {
   text-decoration: underline solid 2px;
   text-underline-offset: 2px;
 }
+
 a:visited {
   color: white;
 }
 
 a:hover {
-  color: rgb(255, 100, 255);             
+  color: rgb(255, 100, 255); 
+}
+
+a.title-link:link {
+  text-decoration: none;
 }
 
 .grid-container {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1rem;
-  padding: 0rem 1rem;
+  padding: 1rem 1rem 2rem 1rem;
   justify-items: center;
 }
 
@@ -106,43 +88,22 @@ h2 {
   border-radius: 10px;
   padding: 1rem;
   box-shadow: 10px 10px 10px black;
+  min-width: 250px;
   max-width: 768px;
 }
 
 footer {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   text-align: center;
   background-color: #000033;
   color: white;
-  padding: 2rem;
-  margin-top: 2rem;
-  font-size: 100%;
-  height: 100%;
+  padding: 1rem;
   width: 100%;
-  position: relative;
-  z-index: 1;
-}
-
-footer::before {
-  position: absolute;
-  content: "";
-  z-index: -1;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  transform-origin: left top;
-  transform: skewY(-2deg);
-  background-color: #000033;
-}
-
-#copyright {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  border-top: medium solid #33a3ff;
+  box-shadow: 0px -10px 10px black;
+  border-bottom: medium solid #33a3ff;
 }
 
 @media (min-width: 768px) {
@@ -152,20 +113,21 @@ footer::before {
   }
 
   header {
-    margin-bottom: 3rem;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    box-shadow: 0px 20px 20px black;
   }
 
-  #title {
-    align-self: flex-start;
-  }
-
-  nav > ul {
+  nav ul {
     gap: 2rem;
   }
 
   .grid-container {
     gap: 2rem;
-    padding: 0rem 2rem;
+    padding: 2rem;
+    padding-bottom: 4rem;
   }
 
   .grid-item {
@@ -175,39 +137,29 @@ footer::before {
   }
   
   footer {
-    margin-top: 3rem;
-  }
-
-  #copyright {
-    align-self: flex-end;
+    padding: 2rem;
+    box-shadow: 0px -20px 20px black;
   }
 
 }
-  
-@media (min-width: 1200px) {
 
-  header {
-    margin-bottom: 4rem;
+@media (min-width: 1200px) {
+  
+  .grid-container {
+    grid-template-columns: 10% 3fr 1fr 10%;
+    grid-template-areas: 
+    ". about-me my-links .";
+    align-items: center;
+    justify-items: center;
+    padding: 4rem;
+  }
+
+  .about-me {
+    grid-area: about-me;
   }
 
   .my-links {
-    justify-content: flex-start;
-  }
-
-  footer {
-    margin-top: 4rem;
+    grid-area: my-links;
   }
 
 }
-
-@media (min-width: 1920px) {
-  header {
-    margin-bottom: 5rem;
-  }
-
-  footer {
-    margin-top: 5rem;
-  }
-
-}
-

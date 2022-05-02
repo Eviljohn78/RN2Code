@@ -60,6 +60,10 @@ a:hover {
   color: rgb(255, 100, 255); 
 }
 
+a.title-link:link {
+  text-decoration: none;
+}
+
 #hero {
   height: 100vh;
   background: linear-gradient(rgba(0, 0, 51, 0.75), rgba(0, 0, 51, 0.75)), url("../images/hero.png");
