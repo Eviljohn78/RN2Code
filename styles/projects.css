@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100vh;
+  background: linear-gradient(rgba(51, 163, 255, 0.75), rgba(51, 163, 255, 0.75)), url("../images/html-background.png");
+  background-size: cover;
+  font-size: medium;
+  line-height: 1.5rem;
+  font-family:Verdana, Tahoma, sans-serif;
+  color: white;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background-color:#000033;
+  width: 100%;
+  border-top: medium solid #33a3ff;
+  border-bottom: medium solid #33a3ff;
+  box-shadow: 0px 10px 10px black;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Press Start 2P", Georgia, serif;
+  font-size: 175%;
+  text-shadow: 5px 5px 5px #33a3ff;
+}
+
+header, h2, h3, footer {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+nav ul {
+  display: flex;
+  gap: 1rem;
+  list-style-type: none;
+}
+
+a:link {
+  color: white;
+  text-decoration: underline solid 2px;
+  text-underline-offset: 2px;
+}
+
+a:visited {
+  color: white;
+}
+
+a:hover {
+  color: rgb(255, 100, 255); 
+}
+
+a.title-link:link {
+  text-decoration: none;
+}
+
+.grid-container {
+  display: grid;
+  gap: 1rem;
+  padding: 1rem;
+  padding-bottom: 2rem;
+  justify-items: center;
+  align-items: center;
+}
+
+.freeCodeCamp-projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background-color: #000033;
+  border: medium solid #33a3ff;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 10px 10px 10px black;
+  min-width: 250px;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background-color: #000033;
+  border: medium solid #33a3ff;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 10px 10px 10px black;
+  min-width: 250px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  background-color: #000033;
+  color: white;
+  padding: 1rem;
+  width: 100%;
+  border-top: medium solid #33a3ff;
+  box-shadow: 0px -10px 10px black;
+  border-bottom: medium solid #33a3ff;
+}
+
+@media (min-width: 768px) {
+
+  body {
+    font-size: 1.2rem;
+  }
+
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    box-shadow: 0px 20px 20px black;
+  }
+
+  nav > ul {
+    gap: 2rem;
+  }
+
+  .grid-container {
+    gap: 2rem;
+    padding: 2rem;
+    padding-bottom: 4rem;
+  }
+
+  .freeCodeCamp-projects {
+    gap: 2rem;
+    padding: 2rem;
+    box-shadow: 20px 20px 20px black;
+  }
+
+  .projects {
+    gap: 2rem;
+    padding: 2rem;
+    box-shadow: 20px 20px 20px black;
+  }
+  
+  footer {
+    padding: 2rem;
+    box-shadow: 0px -20px 20px black;
+  }
+
+}
+
+@media (min-width: 1200px) {
+  
+  h2 {
+    line-height: 1.75rem;
+  }
+  
+  .grid-container {
+    grid-template-columns: 20% 1fr 1fr 20%;
+    grid-template-areas: 
+    ". freeCodeCamp-projects projects .";
+  }
+
+  .freeCodeCamp-projects {
+    grid-area: freeCodeCamp-projects;
+  }
+
+  .projects {
+    grid-area: projects;
+  }
+
+}
